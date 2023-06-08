@@ -27,7 +27,14 @@ const SinglePizza: React.FC<SinglePizzaProps> = ({
 
     return (
         <div className="pizza">
-            <img src={`/images/${pizza.img}`} alt={pizza.title} />
+            {/* <img
+                src={`./react-ts-pizzas/images/${pizza.img}`}
+                alt={pizza.title}
+            /> */}
+
+            <img src={require(`../assets/${pizza.img}`)} alt={pizza.title} />
+            {/* <img src={`../assets/pizza-1.jpg}`} alt={pizza.title} /> */}
+
             <h2>{pizza.title}</h2>
             <span>{pizza.price}</span>
 
